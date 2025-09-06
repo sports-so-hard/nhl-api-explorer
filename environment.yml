@@ -1,0 +1,28 @@
+# This file defines the conda environment for the NHL API Explorer project.
+# It can be used to recreate the environment on any machine with Miniconda or Anaconda.
+name: nhl-api-explorer
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python version
+  - python=3.12
+
+  # Data analysis and visualization libraries
+  - pandas
+  - pandas-stubs
+  - matplotlib
+  - seaborn
+
+  # Jupyter for interactive notebooks
+  - jupyter
+  
+  # Pip is included to manage packages from PyPI
+  - pip
+  
+  # List of packages to be installed by pip
+  - pip:
+    - nhl-api-py
+
